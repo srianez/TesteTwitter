@@ -9,24 +9,14 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.auth.AccessToken;
 
-public class Main {
+public class SearchTagRetweet {
 
 	public static void main(String[] args) throws TwitterException {
 
 		Twitter twitter = TwitterFactory.getSingleton();
 
-		
-		// List<Status> statuses = twitter.getHomeTimeline();
-		// System.out.println("Showing home timeline.");
-		// for (Status status : statuses) {
-		// System.out.println(status.getUser().getName() + ":" +
-		// status.getText());
-		// }
-
-		// Status status = twitter.updateStatus("creating baeldung API");
-
 		// busca por pipipitchu, retorna o usuário que postou e a msg postada.
-		Query query = new Query("#pipipitchu");
+		Query query = new Query("#Chatiado");
 		QueryResult result = twitter.search(query);
 		for (Status c : result.getTweets()) {
 
@@ -34,9 +24,9 @@ public class Main {
 					+ "    ID " + c.getId());
             
 			//retuita a msg encontrada
-			twitter.retweetStatus(c.getId());
+			//twitter.retweetStatus(c.getId());
 			
-			System.out.println("REtuitou " + c.getId());
+			//System.out.println("REtuitou " + c.getId());
 			
 		}
 		
