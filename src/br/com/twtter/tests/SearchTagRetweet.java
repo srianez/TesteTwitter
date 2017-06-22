@@ -1,4 +1,4 @@
-package br.com.twitter.main;
+package br.com.twtter.tests;
 import java.util.List;
 
 import twitter4j.Query;

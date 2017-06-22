@@ -1,4 +1,4 @@
-package br.com.twitter.main;
+package br.com.twtter.tests;
 
 import twitter4j.DirectMessage;
 import twitter4j.Twitter;
