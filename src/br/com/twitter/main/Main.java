@@ -23,6 +23,8 @@ public class Main {
 			List<Status> x = analise.getTweets(twitter);
 			
 			analise.tweet(x);
+			
+			twitter.updateStatus("Há! Yeah Yeah!");
 		
 		} catch (Exception e) {
 			e.printStackTrace();
